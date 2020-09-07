@@ -24,14 +24,16 @@ public class Main {
         return arrayNumbers;
     }
 
-    public static int calculateMaximum(int[]array) {
+    public static int calculateMaximum(int[] array) {
 
         int max = 0;
 
 
         for (int index = 0; index < array.length; index++) {
-            if (array[index] > max)  
-                max = array[index];      
+            if (array[index] > max) {
+                max = array[index];
+            }
+
 
         }
 
@@ -39,7 +41,7 @@ public class Main {
         return max;
     }
 
-    public static void main (String[]args) {
+    public static void main(String[] args) {
         int[] array = createArray();
         calculateMaximum(array);
     }
